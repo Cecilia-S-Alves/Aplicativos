@@ -1,7 +1,10 @@
+//Aulas de Soluções Mobile, 3ª fase do técnico de informática 2025A
 //import { ScrollView } from "react-native";
 import { View,StyleSheet } from "react-native";
 import Login from "./Screens/login";
 import Home from "./Screens/home";
+// Only import react-native-gesture-handler on native platforms
+import 'react-native-gesture-handler';
 //Use os dois abaixo para trocar de tela rapidamente!
 // <Home/>
 // <Login/>
