@@ -6,13 +6,16 @@ export default function Home(){
             <ImageBackground style={{flex:1}} source={{uri:'https://wallpapercave.com/wp/wp14439308.jpg'}}>
             <Text style={styles.titulo}>Personagens de Sumikkogurashi!</Text>
             <View style={styles.imagens}>
-                <Image style={styles.foto} source={{uri:'https://static.wikia.nocookie.net/sumikko-gurashi/images/f/fd/Neko.png/revision/latest?cb=20230126202605'}}/>
-                <Image style={styles.foto} source={{uri:'https://static.wikia.nocookie.net/sumikko-gurashi/images/5/56/Shirokuma.jpg/revision/latest/scale-to-width/360?cb=20230126020840'}}/>
+                <Image style={styles.foto} source={{uri:'https://girlsprintinghouse.com/cdn/shop/files/10_523a6020-b500-4165-a293-d624cf8e78ee.png?v=1695857369&width=600'}}/>
+                <Image style={styles.foto} source={{uri:'https://girlsprintinghouse.com/cdn/shop/files/5.png?v=1695857183&width=493'}}/>
             </View>
             <Text style={styles.texto} >Os mais fofos!</Text>
             <View style={styles.imagens}>
-                <Image style={styles.foto}  source={{uri:'https://static.wikia.nocookie.net/sumikko-gurashi/images/6/69/Tokage.jpeg/revision/latest/scale-to-width/360?cb=20200801111137'}}/>
-                <Image style={styles.foto}  source={{uri:'https://static.wikia.nocookie.net/sumikko-gurashi/images/1/18/Tonkatsu.jpg/revision/latest?cb=20230126202740'}}/>
+                <Image style={styles.foto}  source={{uri:'https://girlsprintinghouse.com/cdn/shop/files/7.png?v=1695857207&width=493'}}/>
+                <Image style={styles.foto}  source={{uri:'https://girlsprintinghouse.com/cdn/shop/files/4.png?v=1695857152&width=493'}}/>
+            </View>
+            <View style={styles.imagens}>
+            <Image style={styles.foto}  source={{uri:'https://girlsprintinghouse.com/cdn/shop/files/6.png?v=1695857066&width=493'}}/>
             </View>
             <Text style={styles.texto1}>Obrigada por passar por aqui!</Text>
             </ImageBackground>
@@ -27,10 +30,16 @@ const styles=StyleSheet.create({
     titulo:{
         fontSize:50,
         alignSelf:'flex-start',
+        color:'#a8a8ed',
+        textDecorationStyle:'double',
+        textDecorationLine:'underline',
     },
     texto:{
         fontSize:50,
         alignSelf:'flex-end',
+        color:'#a8a8ed',
+        textDecorationStyle:'dotted',
+        textDecorationLine:'underline',
     },
     imagens:{
         flexDirection:"row",
@@ -45,6 +54,7 @@ const styles=StyleSheet.create({
     texto1:{
         fontSize:20,
         alignSelf:'center',
+        color:'#8585f2',
     },
 })
 

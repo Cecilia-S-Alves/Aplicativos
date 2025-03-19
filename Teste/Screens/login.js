@@ -9,7 +9,7 @@ export default function Login(){
             <Text style={styles.titulo}>Sumikkogurashi!</Text>
             <View>
                 <TextInput style={styles.input} placeholder="Usuário" inputMode='text'/>
-                <TextInput style={styles.input} placeholder="Senha" inputMode='text'/>
+                <TextInput style={styles.input} placeholder="Senha" inputMode='text' secureTextEntry='false'/>
             </View>
             <Button title="Login"/>
         </View>
@@ -20,17 +20,21 @@ const styles=StyleSheet.create({
     login1:{
         alignItems:'center',
         justifyContent:'space-around',
-        backgroundColor:'white',
+        backgroundColor:'#fad2dd',
         flex:1,
     },
     titulo:{
         fontSize:50,
         alignSelf:'center',
+        color:'#a8a8ed',
+        textDecorationStyle:'dashed',
+        textDecorationLine:'underline',
     },
     input:{
         fontSize:30,
         borderWidth:1,
-        borderColor:'black',
+        borderColor:'#7575e0',
         margin:20,
+        color:'#7575e0',
     }
 })
