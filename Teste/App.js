@@ -3,8 +3,8 @@ import { View,StyleSheet } from "react-native";
 import Login from "./Screens/login";
 import Home from "./Screens/home";
 //Use os dois abaixo para trocar de tela rapidamente!
-//<Home/>
-//<Login/>
+// <Home/>
+// <Login/>
 export default function App() {
   return (
     <View style={styles.container}>
