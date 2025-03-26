@@ -3,15 +3,20 @@
 import { View,StyleSheet } from "react-native";
 import Login from "./Screens/login";
 import Home from "./Screens/home";
-import 'react-native-gesture-handler';
-//Use os dois abaixo para trocar de tela rapidamente!
-// <Home/>
-// <Login/>
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+
 export default function App() {
+  const Stack = createStackNavigator();
   return (
-    <View style={styles.container}>
-    <Login/>
-    </View>
+ 
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="login" component={Login}/> 
+        <Stack.Screen name="home" component={Home}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+ 
   );
 }const styles = StyleSheet.create({
   container:{
