@@ -1,7 +1,7 @@
 import React from "react";
 import { Text,View,StyleSheet,Button } from "react-native";
 import { TextInput } from "react-native-web";
-import Home from "./home";
+
 
 export default function Login({navigation}){
     return(
