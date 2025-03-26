@@ -1,8 +1,9 @@
 import React from "react";
 import { Text,View,StyleSheet,Button } from "react-native";
 import { TextInput } from "react-native-web";
+import Home from "./home";
 
-export default function Login(){
+export default function Login({navigation}){
     return(
         <View style={styles.login1}>
             <Text style={styles.titulo}>Boas vindas!</Text>
@@ -11,7 +12,7 @@ export default function Login(){
                 <TextInput style={styles.input} placeholder="Usuário" inputMode='text'/>
                 <TextInput style={styles.input} placeholder="Senha" inputMode='text' secureTextEntry='false'/>
             </View>
-            <Button title="Login"/>
+            <Button title="Login" onPress={()=> navigation.navigate('home')}/>
         </View>
     )
 };

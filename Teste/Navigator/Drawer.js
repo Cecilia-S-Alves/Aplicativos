@@ -1,14 +1,10 @@
-//Aulas de Soluções Mobile, 3ª fase do técnico de informática 2025A
-//import { ScrollView } from "react-native";
-import { View,StyleSheet } from "react-native";
+// navegação em drawer
 import Login from "./Screens/login";
 import Home from "./Screens/home";
 import { NavigationContainer } from "@react-navigation/native";
-//import { createStackNavigator } from "@react-navigation/stack";
-//import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-export default function App() {
+export default function Drawer() {
   const Drawer = createDrawerNavigator();
   return (
  
@@ -20,8 +16,4 @@ export default function App() {
     </NavigationContainer>
  
   );
-}const styles = StyleSheet.create({
-  container:{
-    flex:1,
-  }
-})
+}
