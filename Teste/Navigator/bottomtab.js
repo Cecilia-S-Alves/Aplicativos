@@ -5,7 +5,7 @@ import Home from "./Screens/home";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-export default function App() {
+export default function Bottomtabs() {
   const BottomTab = createBottomTabNavigator();
   return (
  
