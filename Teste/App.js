@@ -14,7 +14,7 @@ export default function App() {
   return (
  
     <NavigationContainer>
-      <BottomTab.Navigator  initialRouteName="home" screenOptions={{tabBarActiveTintColor:'#7575e0', tabBarActiveBackgroundColor:'#fad2dd', tabBarInactiveTintColor:'#fad2dd', headerStyle:{ backgroundColor:'#fad2dd'}, headerTintColor:'#a8a8ed', headerTitleAlign:'left'}}>
+      <BottomTab.Navigator  initialRouteName="home" screenOptions={{tabBarActiveTintColor:'#7575e0', tabBarActiveBackgroundColor:'#fad2dd', tabBarInactiveTintColor:'#fad2dd', headerStyle:{ backgroundColor:'#fad2dd'}, headerTintColor:'#a8a8ed', headerTitleAlign:'left', animation:"shift"}}>
         <BottomTab.Screen name="login" component={Login} options={{tabBarIcon:()=>(
           <MaterialIcons name="login" size={24} color="#7575e0" />
         )}}/> 
