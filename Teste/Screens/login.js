@@ -12,7 +12,7 @@ export default function Login({navigation}){
                 <TextInput style={styles.input} placeholder="Usuário" inputMode='text'/>
                 <TextInput style={styles.input} placeholder="Senha" inputMode='text' secureTextEntry='false'/>
             </View>
-            <Button title="Login" onPress={()=> navigation.navigate('feed')}/>
+            <Button title="Login" onPress={()=> navigation.navigate('tabs')} color={'#7575e0'}/>
         </View>
     )
 };
