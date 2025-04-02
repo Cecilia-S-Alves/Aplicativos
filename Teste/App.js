@@ -31,7 +31,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="login" component={Login}/>
+      <Stack.Screen name="login" component={Login} options={{headerShown:false}}/>
       <Stack.Screen name="tabs" component={HomeTabs} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>

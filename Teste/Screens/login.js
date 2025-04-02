@@ -1,5 +1,5 @@
 import React from "react";
-import { Text,View,StyleSheet,Button } from "react-native";
+import { Text,View,StyleSheet,Button, TouchableOpacity } from "react-native";
 import { TextInput } from "react-native-web";
 
 
@@ -12,7 +12,9 @@ export default function Login({navigation}){
                 <TextInput style={styles.input} placeholder="Usuário" inputMode='text'/>
                 <TextInput style={styles.input} placeholder="Senha" inputMode='text' secureTextEntry='false'/>
             </View>
-            <Button title="Login" onPress={()=> navigation.navigate('tabs')} color={'#7575e0'}/>
+            <TouchableOpacity style={styles.bo} onPress={()=> navigation.navigate('tabs')} >
+                <Text style={styles.tsxtbo}>Login</Text>
+            </TouchableOpacity>
         </View>
     )
 };
@@ -37,5 +39,16 @@ const styles=StyleSheet.create({
         borderColor:'#7575e0',
         margin:20,
         color:'#7575e0',
+    },
+    bo:{
+        width:'40%',
+        backgroundColor:'#7575e0',
+        height:'8%',
+    },
+    tsxtbo:{
+        color:'#ffff',
+        textAlign:'center',
+        fontSize:35,
+        justifyContent:'center',
     }
 })
