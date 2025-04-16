@@ -3,12 +3,14 @@ import { useState } from "react";
 import { TextInput } from "react-native-web";
 
 export default function Counter(){
+    const [nome, setNome] = useState('')
+    const [email, setEmail] = useState('')
     const [contador,setContador] = useState(0)
 function Aumentar(){
     setContador(contador +1)
 }
 function Diminuir(){
-    if(contador>0.5){
+    if(contador>0){
     setContador(contador -1)
     }
     
@@ -22,8 +24,9 @@ function Diminuir(){
             <TouchableOpacity style={styles.bo} onPress={Diminuir} ><Text style={styles.textbo}>-</Text></TouchableOpacity>
             </View>
             <View style={styles.caixa}>
-            <TextInput style={styles.input} placeholder="Nome" inputMode='text'/>
-            <TextInput style={styles.input} placeholder="Email" inputMode='text'/>
+            <TextInput style={styles.input} placeholder="Nome" inputMode='text' value={nome} onChangeText={setNome}/>
+            <TextInput style={styles.input} placeholder="Email" inputMode='text' value={email} onChangeText={setEmail}/>
+            <Text style={styles.texto}>Oi, {nome}, seu email é {email} </Text>
             </View>
 
         </View>
